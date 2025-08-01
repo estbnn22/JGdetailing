@@ -1,0 +1,1034 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    top: 0;
+}
+nav li {
+    background-color: black;
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 18px 5px 18px 5px;
+}
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(196, 127, 0);
+    text-decoration-thickness: 5px ;
+}
+nav .logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(Images/Untitled-1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px; 
+}
+.hero {
+    height: 100vh;
+    background: url(Images/aa84b9d6-356b-47b8-b789-65f9eb97079e.png) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba( 0, 0, 0, 0.5);
+    z-index: 0;
+}
+.hero-content {
+    position: relative;
+}
+.hero-content h1 {
+    color: white;
+    margin: 0 0 2% 0;
+    font-size: 5rem;
+}
+.hero-content p {
+    color: white;
+    margin: 2% 0 5% 0;
+    font-size: 2rem;
+}
+.hero-content .btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 127, 0);
+    padding: 1rem 100px;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition: .4s;
+    
+}
+.hero-content .btn:hover {
+    border-radius: 50px;
+}
+
+.anim {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(10%);
+    transition: all 600ms;
+}
+ 
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+.services {
+    background-color: rgb(19, 19, 19);
+}
+.services h1 {
+    text-align: center;
+    color: white;
+    padding: 5%;
+    font-size: 50px;
+}
+.services-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 127, 0);
+    border-radius: 30px;
+    width: 80%;
+    padding: 3%;
+    transition: .3s;
+    margin-bottom: 5%;
+}
+.card1:hover {
+    transform: scale(1.01);
+}
+.card1 i {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+.card1 h2 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+.card1 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 127, 0);
+    border-radius: 30px;
+    width: 80%;
+    padding: 3%;
+    transition: .3s;
+    margin-bottom: 5%;
+}
+.card2:hover {
+    transform: scale(1.01);
+}
+.card2 i {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+.card2 h2 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+.card2 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.card3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(196, 127, 0);
+    border-radius: 30px;
+    width: 80%;
+    padding: 3%;
+    transition: .3s;
+    margin-bottom: 5%;
+}
+.card3:hover {
+    transform: scale(1.01);
+}
+.card3 i {
+    color: white;
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+.card3 h2 {
+    color: white;
+    font-size: 40px;
+    padding-bottom: 2%;
+}
+.card3 p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+.pricing h1{
+    text-align: center;
+    padding: 5%;
+    font-size: 50px;
+}
+.packeges {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 10%;
+}
+.package1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+    box-shadow: 10px 10px 5px darkgrey;
+    border-radius: 15px;
+    transition: .3s;
+    width: 25%;
+}
+.package1:hover {
+    scale: 1.01;
+}
+.package1 h2 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding: 3%;
+    font-size: 40px;
+}
+.package1 .starting {
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    padding-top: 5%;
+    text-align: center;
+}
+.package1 h3 {
+    font-size: 75px;
+    padding: 1% 0 5% 0;
+    text-align: center;
+}
+.package1 .desc {
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 5% 10% 5%;
+}
+.package1 .btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 127, 0);
+    padding: 2% 5%;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition: .4s;
+}
+.package1 .btn:hover {
+    border-radius: 50px;
+}
+
+.package1 .vary {
+    font-size: 20px;
+    text-align: center;
+    padding: 3% 0 5% 0;
+    color: rgb(71, 71, 71);
+}
+.package2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+    box-shadow: 10px 10px 5px darkgrey;
+    border-radius: 15px;
+    transition: .3s;
+    width: 25%;
+}
+.package2:hover {
+    scale: 1.01;
+}
+.package2 h2 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding: 3%;
+    font-size: 40px;
+}
+.package2 .starting {
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    padding-top: 5%;
+    text-align: center;
+}
+.package2 h3 {
+    font-size: 75px;
+    padding: 1% 0 5% 0;
+    text-align: center;
+}
+.package2 .desc {
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 5% 10% 5%;
+}
+.package2 .btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 127, 0);
+    padding: 2% 5%;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition: .4s;
+}
+.package2 .btn:hover {
+    border-radius: 50px;
+}
+
+.package2 .vary {
+    font-size: 20px;
+    text-align: center;
+    padding: 3% 0 5% 0;
+    color: rgb(71, 71, 71);
+}
+.package3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 202, 202);
+    box-shadow: 10px 10px 5px darkgrey;
+    border-radius: 15px;
+    transition: .3s;
+    width: 25%;
+}
+.package3:hover {
+    scale: 1.01;
+}
+.package3 h2 {
+    color: white;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    padding: 3%;
+    font-size: 40px;
+}
+.package3 .starting {
+    font-size: 25px;
+    color: rgb(71, 71, 71);
+    padding-top: 5%;
+    text-align: center;
+}
+.package3 h3 {
+    font-size: 75px;
+    padding: 1% 0 5% 0;
+    text-align: center;
+}
+.package3 .desc {
+    font-size: 25px;
+    text-align: center;
+    padding: 2% 5% 10% 5%;
+}
+.package3 .btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(196, 127, 0);
+    padding: 2% 5%;
+    font-size: 2rem;
+    border-radius: 20px;
+    transition: .4s;
+}
+.package3 .btn:hover {
+    border-radius: 50px;
+}
+
+.package3 .vary {
+    font-size: 20px;
+    text-align: center;
+    padding: 3% 0 5% 0;
+    color: rgb(71, 71, 71);
+}
+.quote {
+    background-color: rgb(19, 19, 19);
+}
+.quote h1 {
+    text-align: center;
+    color: white;
+    font-size: 75px;
+    padding: 5% 0 2% 0;
+    text-decoration: underline;
+    text-decoration-color: rgb(196, 127, 0);
+}
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    width: 100%;
+}
+.quote-content h2 {
+    color: white;
+    font-size: 45px;
+    
+}
+.quote-content p {
+    color: white;
+    font-size: 30px;
+    padding: 2%;
+}
+.quote-content a {
+    text-decoration: none;
+    color: white;
+    padding: 1%;
+    font-size: 20px;
+}
+.quote-content a:hover {
+ color: rgb(196, 127, 0);
+}
+.soon {
+    background-color: beige;
+}
+.soon h1 {
+    text-align: center;
+    padding: 5%;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(196, 127, 0);
+}
+.soon h2 {
+    text-align: center;
+    font-size: 30px;
+}
+.soon p {
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 4% 0;
+}
+ 
+.footer {
+    background-color: black; 
+    height: 50vh;   
+}
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.business {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.business h1 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.business li {
+    text-align: center;
+    padding: 1rem;
+}
+.business a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;   
+}
+.business a:hover {
+    color: rgb(196, 127, 0);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact h1 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.contact li {
+    text-align: center;
+    padding: 2rem;
+}
+.contact a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;   
+}
+.contact a:hover {
+    color: rgb(196, 127, 0);
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.socials h1 {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+.socials li {
+    text-align: center;
+    padding: 1rem;
+}
+.socials a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;   
+}
+.socials a:hover {
+    color: rgb(196, 127, 0);
+}
+
+.about-hero {
+    background: url(Images/ChatGPT\ Image\ Jul\ 24\,\ 2025\,\ 03_39_07\ PM.png) center/cover no-repeat;
+    height: 50vh;
+    z-index: 1;
+}
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: rgba( 0, 0, 0, 0.5);
+    z-index: 0;
+}
+.about-hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+.about-hero-content h1{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.about-us h1{
+    text-align: center;
+    padding: 3%;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(196, 127, 0);
+}
+.about-us p {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 4%;
+}
+.pricing-hero {
+    background: url(Images/Mustang.png) center/cover no-repeat;
+    height: 50vh;
+    z-index: 1;
+}
+.pricing-hero::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: rgba( 0, 0, 0, 0.5);
+    z-index: 0;
+}
+.pricing-hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.pricing-hero-content h1{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+.pricing-hero-content p {
+    color: white;
+    padding: 3%;
+    font-size: 30px;
+    text-align: center;
+}
+hr {
+    border: solid;
+    color: rgb(196, 127, 0);
+    width: 50%;
+    border-radius: 10px;
+    margin: auto;
+}
+.addons {
+    background-color: aliceblue;
+    padding-bottom: 5%;
+}
+.add-ons {
+    text-align: center;
+    padding : 5%;
+    font-size: 50px;
+}
+.addons-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.addon-card1 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.addon-card1 h2 {
+    text-align: center;
+    padding: 4%;
+    font-size: 50px;
+}
+.addon-card2 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.addon-card2 h2 {
+    text-align: center;
+    padding: 4%;
+    font-size: 50px;
+}
+.addon-card3 h1 {
+    text-align: center;
+    font-size: 30px;
+}
+.addon-card3 h2 {
+    text-align: center;
+    padding: 4%;
+    font-size: 50px;
+}
+
+.work-hero {
+    background: url(Images/Foam\ camaro.png) center/cover no-repeat;
+    height: 50vh;
+    z-index: 1;
+}
+.work-hero::before {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    background: rgba( 0, 0, 0, 0.5);
+    z-index: 0;
+}
+.work-hero-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.work-hero-content h1{
+    color: white;
+    text-align: center;
+    font-size: 75px;
+}
+.image1 {
+    background-color: aliceblue;
+    padding: 0.5%;
+}
+
+.image1 h2 {
+    text-align: center;
+    margin: 5%;
+    font-size: 50px;
+    text-decoration: underline;
+    text-decoration-color: rgb(196, 127, 0);
+}
+
+.image-comp {
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px darkgrey;
+   
+}
+
+.image-comp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+}
+.image-comp .images-container {
+    position: relative;
+    display: flex;
+}
+.image-comp .images-container .before-image {
+    position: absolute;
+    top: 0;
+    width: 50%;
+}
+
+.image-comp .slider {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+}
+.image-comp .slider-line {
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: white;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.image-comp .slider-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+.socials-logos {
+    display: flex;
+    justify-content: center;
+}
+.socials-logos a {
+    margin: 5%;
+}
+
+.quote i {
+    font-size: 50px;
+}
+
+.socials i {
+    font-size: 50px;
+}
+
+.socials-logos i {
+    font-size: 40px;
+    padding: 5%;
+    color: black;
+}
+.socials-logos i:hover {
+    color: rgb(196, 127, 0);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+      .services-cards,
+      .packeges {
+        flex-direction: column;
+        align-items: center;
+      }
+      br {
+        display: none;
+      }
+      .package1,
+      .package2,
+      .package3 {
+        width: 90%;
+        margin-bottom: 2rem;
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+      .hero-content .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+      }
+      .card1 h2,
+      .card2 h2,
+      .card3 h2,
+      .card1 p,
+      .card2 p,
+      .card3 p {
+        font-size: 1.2rem;
+      }
+      
+      .quote {
+        padding: 10% 0 10% 0;
+      }
+      .quote-content h2 {
+        font-size: 1.2rem;
+      }
+      
+      .quote-content p {
+        font-size: 1rem;
+        padding: 5%;
+        width: 50%;
+      }
+      
+      .quote-content a {
+        font-size: 1rem;
+      }
+      
+      .soon h2 {
+        font-size: 2rem;
+      }
+      
+      .soon p {
+        font-size: 1rem;
+      }
+      .soon h1,
+      .quote h1 {
+        font-size: 45px;
+      }
+      .about-hero-content h1 {
+        font-size: 50px;
+      }
+
+      .about-us h1{
+        font-size: 40px;
+      }
+      .about-us p{
+        font-size: 15px;
+      }
+     .footer {
+        height: 100vh;
+     }
+    .image-comp {
+    max-width: 90%;
+  }
+  .image1 h2 {
+    font-size: 40px;
+    margin: 10%;
+  }
+  hr {
+    width: 75%;
+  }
+    }
+    @media screen and (max-width: 768px) {
+
+      .services-cards,
+      .packeges {
+        flex-direction: column;
+        align-items: center;
+      }
+      br {
+        display: none;
+      }
+      .package1,
+      .package2,
+      .package3 {
+        width: 90%;
+        margin-bottom: 2rem;
+      }
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+      .hero-content .btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem;
+      }
+      .card1 h2,
+      .card2 h2,
+      .card3 h2,
+      .card1 p,
+      .card2 p,
+      .card3 p {
+        font-size: 1.2rem;
+      }
+      
+      .quote {
+        padding: 10% 0 10% 0;
+      }
+      .quote-content{
+        width: 100%;
+      }
+      .quote-content h2 {
+        font-size: 1.2rem;
+      }
+      
+      .quote-content p {
+        font-size: 1rem;
+        padding: 5%;
+        
+      }
+      
+      .quote-content a {
+        font-size: 1rem;
+      }
+      .soon div{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .soon h2 {
+        font-size: 2rem;
+      }
+      
+      .soon p {
+        font-size: 1rem;
+      }
+      .soon h1,
+      .quote h1 {
+        font-size: 45px;
+      }
+      .about-hero-content h1 {
+        font-size: 50px;
+      }
+
+      .about-us h1{
+        font-size: 40px;
+      }
+      .about-us p{
+        font-size: 15px;
+      }
+      .footer {
+        height: 60vh;
+      }
+      .footer-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+      }
+      .business h1 {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: 30px;
+    }
+    .business li {
+    text-align: center;
+    padding: .1rem;
+    }
+    .business a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;   
+    }
+     .contact h1 {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: 30px;
+    }
+    .contact li {
+    text-align: center;
+    padding: .1rem;
+    }
+    .contact a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;   
+    }
+     .socials h1 {
+    color: white;
+    text-align: center;
+    padding: .5rem;
+    font-size: 30px;
+    }
+    .socials li {
+    text-align: center;
+    padding: .1rem;
+    }
+    .socials a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 15px;   
+    }
+    .image-comp {
+    max-width: 90%;
+  }
+  .image1 h2 {
+    font-size: 40px;
+    margin: 10%;
+  }
+  hr {
+    width: 75%;
+  }
+    }
+
